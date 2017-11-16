@@ -30,16 +30,16 @@ import solver.variables.VarI;
 
 public class MathVarConstraintFactory {
 
-	public static ConstraintI distanceXYZ(VarI x, VarI y, VarI z) {
-		return new MDistanceXYZ(x,y,z);
+	public static ConstraintI cumulative_ElKholi(VarI[] start, VarI[] dur, VarI[] end, VarI capa, double[] conso, double epsilon) {
+		return new MCumulative_ElKholi(start,dur,end, capa,conso,epsilon);
 	}
 	
 	public static ConstraintI deviation(VarI[] vars, VarI z, VarI s) {
 		return new MDeviation(vars,z,s);
 	}
-	
-	public static ConstraintI cumulative_ElKholi(VarI[] start, VarI[] dur, VarI[] end, VarI capa, double[] conso, double epsilon) {
-		return new MCumulative_ElKholi(start,dur,end, capa,conso,epsilon);
+
+	public static ConstraintI distanceXYZ(VarI x, VarI y, VarI z) {
+		return new MDistanceXYZ(x,y,z);
 	}
 	
 	public static ConstraintI interdistance(VarI[] vars, VarI z) {
@@ -77,6 +77,14 @@ public class MathVarConstraintFactory {
 		return new MScalar(vars, coeffs, value, op);
 	}
 	
+	public static ConstraintI sortIncreasing(MMathIntVar[] x, MMathIntVar[] s) {
+		return new MSortIncreasing(x,s);
+	}
+	
+	public static ConstraintI sortDecreasing(MMathIntVar[] x, MMathIntVar[] s) {
+		return new MSortDecreasing(x,s);
+	}
+	
 	public static ConstraintI sum(VarI[] vars, MIntVar z, String op) {
 			VarI[] svars = new VarI[vars.length+1];
 			int[] c = new int[vars.length+1];
@@ -88,13 +96,5 @@ public class MathVarConstraintFactory {
 			c[vars.length] = -1;
 			return new MScalar(svars,c,0,op);
 		}
-	
-	public static ConstraintI sortIncreasing(MMathIntVar[] x, MMathIntVar[] s) {
-		return new MSortIncreasing(x,s);
-	}
-	
-	public static ConstraintI sortDecreasing(MMathIntVar[] x, MMathIntVar[] s) {
-		return new MSortDecreasing(x,s);
-	}
 	
 }
