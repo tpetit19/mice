@@ -1,6 +1,6 @@
 
 
-    /* MICE 1.0 "CP-style" Java modeler for linear solvers. 
+    MICE 1.0 "CP-style" Java modeler for linear solvers. 
     Copyright (c) 2017 Thierry Petit. All rights reserved. 
     Licensed under the BSD 4-clause license.
     See LICENSE file in the project root for full license information.
@@ -11,5 +11,5 @@
 
     Currently, the following interfaces to solving engines have been implemented:
     - Text mode
-    - Gurobi 7.0.2 (add gurobi.jar to the project): http://www.gurobi.com/index */
+    - Gurobi 7.0.2 (add gurobi.jar to the project): http://www.gurobi.com/index 
  
