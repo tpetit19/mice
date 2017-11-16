@@ -3,7 +3,7 @@
     MICE 1.0 "CP-style" Java modeler for linear solvers. 
     Copyright (c) 2017 Thierry Petit. All rights reserved. 
     Licensed under the BSD 4-clause license.
-    See LICENSE file in the project root for full license information.
+    See LICENSE.txt file in the project root for full license information.
       ()-()
      _(o o)_  
       /\o/\
