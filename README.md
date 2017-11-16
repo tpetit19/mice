@@ -11,5 +11,5 @@
 
     Currently, the following interfaces to solving engines have been implemented:
     - Text mode
-    - Gurobi 7.0.2 (add gurobi.jar to the project): http://www.gurobi.com/index 
+    - Gurobi 7.0.2 (add gurobi.jar to the project): http://www.gurobi.com 
  
