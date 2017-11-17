@@ -15,13 +15,7 @@ import gurobi.GRB;
 import gurobi.GRBEnv;
 import gurobi.GRBException;
 import gurobi.GRBModel;
-import solver.LinExpr;
 import solver.engines.InterfaceI;
-import solver.variables.MBinVar;
-import solver.variables.MIntVar;
-import solver.variables.MMathIntVar;
-import solver.variables.MRealVar;
-import solver.variables.VarI;
 
 /**
  * Interface to Gurobi, may 2016 version. 
